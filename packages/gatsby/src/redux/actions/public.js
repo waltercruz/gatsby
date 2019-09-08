@@ -24,13 +24,10 @@ const actions = {}
 const isWindows = platform() === `win32`
 const delimiter = isWindows ? `\\` : `/`
 
-<<<<<<< HEAD
 function getRelevantFilePathSegments(filePath) {
   return filePath.split(delimiter).filter(s => s !== ``)
 }
 
-=======
->>>>>>> upstream/master
 const findChildren = initialChildren => {
   const children = [...initialChildren]
   const queue = [...initialChildren]
